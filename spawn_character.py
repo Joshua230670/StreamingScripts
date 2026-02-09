@@ -22,28 +22,8 @@ OBS_PASSWORD = os.getenv("PASSWORD")
 
 # ---------------- Character Images ----------------
 CHARACTER_IMAGES = [
-    "D:\\Stream&Capture\\Assets\\Rouge1.webp",
-    "D:\\Stream&Capture\\Assets\\Rouge2.webp",
-    "D:\\Stream&Capture\\Assets\\Rouge3.png",
-    "D:\\Stream&Capture\\Assets\\Rouge4.png",
-    "D:\\Stream&Capture\\Assets\\Rouge5.png",
-    "D:\\Stream&Capture\\Assets\\Rouge6.png",
-    "D:\\Stream&Capture\\Assets\\Rouge7.png",
-    "D:\\Stream&Capture\\Assets\\Rouge9.png",
-    "D:\\Stream&Capture\\Assets\\Rouge10.png",
-    "D:\\Stream&Capture\\Assets\\Rouge11.png",
-    "D:\\Stream&Capture\\Assets\\Rouge12.png",
-    "D:\\Stream&Capture\\Assets\\Rouge13.png",
-    "D:\\Stream&Capture\\Assets\\Rouge14.png",
-    "D:\\Stream&Capture\\Assets\\Rouge15.png",
-    "D:\\Stream&Capture\\Assets\\Rouge16.png",
-    "D:\\Stream&Capture\\Assets\\Rouge17.png",
-    "D:\\Stream&Capture\\Assets\\Rouge18.png",
-    "D:\\Stream&Capture\Assets\\Rouge19.png",
-    "D:\\Stream&Capture\\Assets\\Rouge20.png",
-    "D:\\Stream&Capture\\Assets\\Rouge21.png",
-    "D:\\Stream&Capture\\Assets\\Rouge22.png",
-    "D:\\Stream&Capture\\Assets\\Rouge23.png"
+    "",
+    ""
 ]
 
 character_counter = 0
