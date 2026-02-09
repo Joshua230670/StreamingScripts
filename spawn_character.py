@@ -220,8 +220,6 @@ class CharacterBot:
     async def poll_redemptions(self):
         # Poll for new redemptions
         print(f"[INFO] Starting to poll for '{REWARD_NAME}'...")
-        print("[INFO] Redeem the reward in your stream to test!")
-        print("[INFO] Each character will automatically disappear after 10 seconds!")
         
         while True:
             try:
@@ -298,9 +296,6 @@ class CharacterBot:
             
         print(f"\n[SUCCESS] Bot is ready!")
         print(f"Reward: '{REWARD_NAME}'")
-        print(f"Cost: 50 points")
-        print(f"Images will spawn at random positions with random sizes!")
-        print(f"Each character disappears automatically after 10 seconds!")
         
         await self.poll_redemptions()
 
