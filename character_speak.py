@@ -266,6 +266,13 @@ async def generate_response(user, chatter_input):
         overlay=True
     )
 
+# -------- Clear Media Source --------
+    obs_client.set_input_settings(
+        "Rouge Voice",
+        {"local_file": ""},
+        overlay=True
+    )
+
 async def main():
     bot = CharacterBot()
     await bot.run()
