@@ -213,8 +213,12 @@ class CharacterBot:
 async def generate_response(user, chatter_input):
     # -------- Gemini --------
     gemini_resp = gemini_client.models.generate_content(
-        model="gemini-2.5-pro",
-        contents=prompt
+        model="gemini-2.5-flash",
+        config=types.GenerateContentConfig(
+            system_instruction=prompt
+        ),
+        # This is where you talk to the AI.
+        contents=f"User {user} sent a message: {chatter_input}"
     )
 
     print(gemini_resp.text)
@@ -223,7 +227,7 @@ async def generate_response(user, chatter_input):
     audio = eleven_client.text_to_speech.convert(
         text=gemini_resp.text,
         voice_id="cTnhrSbEbuGjoDHEnwfl",
-        model_id="eleven_multilingual_v2",
+        model_id="eleven_v3",
         output_format="mp3_44100_128"
     )
 
@@ -268,7 +272,7 @@ async def generate_response(user, chatter_input):
 
 # -------- Clear Media Source --------
     obs_client.set_input_settings(
-        "Rouge Voice",
+        "Voice",
         {"local_file": ""},
         overlay=True
     )
